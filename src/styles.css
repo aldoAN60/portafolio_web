@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+@import '/node_modules/primeflex/primeflex.css';
+.text-shadow{
+    text-shadow: 4px 4px 30px #c7cae055;
+}
+body{
+    background-color: #040d19 !important;
+}

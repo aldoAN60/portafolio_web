@@ -1,0 +1,38 @@
+.content {
+    position: relative; /* Añade posición relativa para que el pseudo-elemento se posicione correctamente */
+    height: 95vh;
+    width: 99vw;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/img/presentation-background.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.093)), url("/assets/img/presentation-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido del div */
+    filter: brightness(45%); /* Ajusta el valor según lo que desees para el filtro de color */
+}
+
+/* Puedes ajustar otros estilos según tus necesidades */
+
+.content-tertiary{
+background-color: #17237e58;
+backdrop-filter: blur(3px);
+width: 50%;
+border-radius: 12px;
+}
+.tooling-title{
+    margin-top: 2em;
+    border-radius: 12px;
+    border:1px solid #101958;
+    box-shadow: 0px 0px 30px 5px rgba(99, 102, 241, 0.15) inset;
+-webkit-box-shadow: 0px 0px 30px 5px rgba(99, 102, 241, 0.15) inset;
+-moz-box-shadow: 0px 0px 30px 5px rgba(99, 102, 241, 0.15) inset;
+}

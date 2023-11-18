@@ -1,5 +1,5 @@
 <div class="content grid flex align-items-center flex-wrap">
-    <div class="col-7">
+    <div class="col-7 fadeinleft animation-duration-2000">
         <div class="pl-6">
             <div class="content-tertiary capitalize">
                 <h3 class="text-2xl font-semibold text-center p-3  ">Hello World! I am Aldo Armenta</h3>
@@ -17,14 +17,14 @@
             </div>
         </div>
     </div>
-    <div class="col-5">
+    <div class="col-5 fadeinright animation-duration-2000">
         <div class="text-center">
             <img src="/assets/img/portafolio_pic.jpg" alt="" class="w-8 border-circle">
         </div>
     </div>
 </div>
 <section class="flex flex-column align-items-center justify-content-center">
-    <div class="mt-4">
+    <div class="mt-5">
         <p-chip>
             <h2 class="text-2xl uppercase">Tooling</h2>
         </p-chip>
@@ -32,7 +32,7 @@
     <div class="w-6">
         <div class="tooling-section mt-4">
             <p-card >
-                <div class="card flex justify-content-evently flex-wrap gap-3 ">
+                <div class="card flex justify-content-evently flex-wrap gap-3">
                     <p-chip *ngFor="let tool of toolingArr">
                         <div class="p-2 text-2xl">{{tool}}</div>
                     </p-chip>
@@ -44,7 +44,7 @@
 </section>
 <!-- proyectos univeritarios, freelance o personales // side proyects, freelance jobs, universitary proyects  -->
 <section >
-    proyectos univeritarios, freelance o personales // side proyects, freelance jobs, universitary proyects
+    <app-project-slider></app-project-slider>
 </section>
 <section>
     cursos certificaciones y educacion // courses, certifications, education
@@ -57,5 +57,5 @@ testimonios y referencias // testimonials and references
 </section>
 
 <section>
-    Enlaces a Redes Sociales y Perfiles Profesionales // gitHub, LinkedIn, hakerRanck, fiver
+    <app-social-networks></app-social-networks>
 </section>

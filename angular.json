@@ -27,6 +27,7 @@
             "styles": [
               "src/styles.css",
               "src/assets/custom_them_portfolio.css"
+              
             ],
             "scripts": []
           },

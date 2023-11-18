@@ -4577,6 +4577,41 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
   border-radius: 6px;
 }
+.linkedin-card {
+  background: #0077b5;
+  color: #fff;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0 !important;
+}
+.gitub-card {
+  background: #333;
+  color: #fafafa;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0 !important;
+}
+.hackerRank-card {
+  background: #111621;
+  color: #068932;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0 !important;
+}
+.fiverr-card {
+  background: #ffff;
+  color: #191919;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0 !important;
+}
+.gmail-card {
+  background: #183462;
+  color: #fff;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0 !important;
+}
 .p-card .p-card-body {
   padding: 1.25rem;
 }
@@ -6849,6 +6884,10 @@ p-treeselect.p-treeselect-clearable .p-treeselect-clear-icon {
   color: #fff;
   border-radius: 16px;
   padding: 0 0.75rem;
+}
+.custom-chip {
+  background-color: #036475; /* Cambia esto al color personalizado que desees */
+  color: #fff; /* Color del texto, ajusta según sea necesario */
 }
 .p-chip .p-chip-text {
   line-height: 1.5;

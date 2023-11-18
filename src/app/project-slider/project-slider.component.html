@@ -1,0 +1,37 @@
+<div class="mt-5 text-center">
+    <p-chip>
+        <h2 class="text-2xl uppercase">Projects</h2>
+    </p-chip>
+</div>
+<p-carousel [value]="projects" [numVisible]="1" [numScroll]="1" [circular]="true" [showIndicators]="false" [responsiveOptions]="responsiveOptions">
+    <ng-template let-project pTemplate="item" >
+        <div class="border-1 surface-border border-round m-2 text-center pt-2 pb-2 px-3 ">
+            <div class="grid">
+                <div class="col">  
+                    <div class="card flex justify-content-center">
+                        <p-image [src]="project.path_picture[0]"  width="100%" height="100%"></p-image>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <h3 class="mb-1 text-3xl">{{ project.project_name }}</h3>
+                        <h4 class="mt-0 mb-3 font-medium text-justify">{{project.descripcion}}</h4>
+                        <div class="card flex justify-content-evently flex-wrap gap-2 mt-5">
+                            <div *ngFor="let used_tech of project.used_technologies">
+                                <p-chip  styleClass="custom-chip">
+                                    <div class="p-1">{{used_tech}}</div>
+                                </p-chip>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</p-carousel>
+
+
+
+
+
+

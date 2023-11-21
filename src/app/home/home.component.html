@@ -1,17 +1,17 @@
-<div class="content grid flex align-items-center flex-wrap">
+<div class="content grid align-items-center">
     <div class="col-7 fadeinleft animation-duration-2000">
-        <div class="pl-6">
-            <div class="content-tertiary capitalize">
-                <h3 class="text-2xl font-semibold text-center p-3  ">Hello World! I am Aldo Armenta</h3>
+        <div class="pl-6 md:p-0">
+            <div class="content-tertiary capitalize xl:w-6 lg:w-7 md:w-full w-full">
+                <h3 class="xl:text-2xl lg:text-xl  font-semibold text-center xl:p-3 lg:p-3 md:p-3 sm:p-3 p-3">Hello World! I am Aldo Armenta</h3>
             </div>
             <div class="content-primary">
-                <h1 class="font-bold text-7xl">A Jr <span class="text-primary-500 text-shadow">Full-stack developer</span>. </h1>
+                <h1 class="font-bold xl:text-9xl lg:text-7xl md:text-4xl ">A Jr <span class="text-primary-500 text-shadow">Full-stack developer</span>. </h1>
             </div>
             <div class="content-secondary">
-                <p class="lowercase text-xl font-normal text-justify" style="letter-spacing: .1em;">
-                    I am a JR Full-Stack developer with a one year of expirience. <br>
-                    recognized as a practical and effective developer, <br> 
-                    with experience in generating cross-functional projects <br> 
+                <p class=" text-xl md:text-lg font-normal text-justify ">
+                    I am a JR Full-Stack developer with a one year of expirience.
+                    recognized as a practical and effective developer,
+                    with experience in generating cross-functional projects 
                     in an environment with little time to complete them on time and within budget.
                 </p>
             </div>
@@ -19,7 +19,7 @@
     </div>
     <div class="col-5 fadeinright animation-duration-2000">
         <div class="text-center">
-            <img src="~src/assets/img/portafolio_pic.jpg" alt="" class="w-8 border-circle">
+            <img src="assets/img/portafolio_pic.jpg" alt="" class="xl:w-9 lg:w-9 md:w-full w-8  border-circle">
         </div>
     </div>
 </div>
@@ -46,15 +46,15 @@
 <section >
     <app-project-slider></app-project-slider>
 </section>
-<section>
-    cursos certificaciones y educacion // courses, certifications, education
+<section class="flex flex-column align-items-center ">
+    <app-education></app-education>
 </section>
-<section>
+<!-- <section>
 habilidades // soft skills 
 </section>
 <section>
 testimonios y referencias // testimonials and references
-</section>
+</section> -->
 
 <section>
     <app-social-networks></app-social-networks>

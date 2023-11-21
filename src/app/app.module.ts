@@ -10,14 +10,16 @@ import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { ImageModule } from 'primeng/image';
 import { SocialNetworksComponent } from './social-networks/social-networks.component';
-
+import { TimelineModule } from 'primeng/timeline';
+import { EducationComponent } from './education/education.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProjectSliderComponent,
-    SocialNetworksComponent
+    SocialNetworksComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,7 @@ import { SocialNetworksComponent } from './social-networks/social-networks.compo
     CarouselModule,
     ButtonModule,
     ImageModule,
+    TimelineModule
   ],
   providers: [],
   bootstrap: [AppComponent]

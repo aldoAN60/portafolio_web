@@ -1,0 +1,26 @@
+<div class="my-5 text-center">
+    <p-chip>
+        <h2 class="text-2xl uppercase">Courses</h2>
+    </p-chip>
+</div>
+<div class="card" class="w-6 md:w-max ">
+    <p-timeline [value]="educations" align="alternate" >
+        <ng-template pTemplate="content" let-education>
+            <p-card [header]="education.course" [subheader]="education.organization">
+                <small><p>{{education.date}}</p></small>
+                <!-- <img *ngIf="event.image" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + event.image" [alt]="event.name" width="200" class="shadow-2" />-->
+                <a  href="{{education.course_link}}" class="{{education.course_link === 'none' ? 'hidden' : 'p-button-text'}} " target="_blank">
+                <p-button size="large">Show Course</p-button>
+                </a>
+                
+
+                <!-- <p-button label="Primary" flat="true" raised="true"></p-button> -->
+                
+            </p-card>
+        </ng-template>
+        
+        <ng-template pTemplate="opposite" let-education >
+            {{ education.date }}
+        </ng-template>
+    </p-timeline>
+</div>

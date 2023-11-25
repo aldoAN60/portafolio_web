@@ -1,14 +1,14 @@
 <div class="content grid align-items-center">
-    <div class="col-7 fadeinleft animation-duration-2000">
-        <div class="pl-6 md:p-0">
-            <div class="content-tertiary capitalize xl:w-6 lg:w-7 md:w-full w-full">
-                <h3 class="xl:text-2xl lg:text-xl  font-semibold text-center xl:p-3 lg:p-3 md:p-3 sm:p-3 p-3">Hello World! I am Aldo Armenta</h3>
+    <div class="col-12 lg:col-7 fadeinleft animation-duration-2000">
+        <div class="md:px-3 md:text-center md:flex md:flex-column lg:align-items-start md:align-items-center">
+            <div class="content-tertiary capitalize p-1 lg:w-10 md:w-7 w-full md:p-0">
+                <h3 class="font-semibold text-center text-lg lg:text-3xl md:text-2xl ">Hello World! I am Aldo Armenta</h3>
             </div>
             <div class="content-primary">
-                <h1 class="font-bold xl:text-9xl lg:text-7xl md:text-4xl ">A Jr <span class="text-primary-500 text-shadow">Full-stack developer</span>. </h1>
+                <h1 class="font-bold text-4xl lg:text-7xl md:text-5xl ">A Jr <span class="text-primary-500 text-shadow">Full-stack developer</span>. </h1>
             </div>
             <div class="content-secondary">
-                <p class=" text-xl md:text-lg font-normal text-justify ">
+                <p class="text-lg  lg:text-2xl md:text-xl  font-normal text-justify ">
                     I am a JR Full-Stack developer with a one year of expirience.
                     recognized as a practical and effective developer,
                     with experience in generating cross-functional projects 
@@ -17,28 +17,35 @@
             </div>
         </div>
     </div>
-    <div class="col-5 fadeinright animation-duration-2000">
+    <div class="col-12 lg:col-5 fadeinright animation-duration-2000">
         <div class="text-center">
-            <img src="assets/img/portafolio_pic.jpg" alt="" class="xl:w-9 lg:w-9 md:w-full w-8  border-circle">
+            <img src="assets/img/portafolio_pic.jpg" alt="" class="w-6 md:w-4 lg:w-9  border-circle ">
         </div>
     </div>
 </div>
 <section class="flex flex-column align-items-center justify-content-center">
     <div class="mt-5">
         <p-chip>
-            <h2 class="text-2xl uppercase">Tooling</h2>
+            <h2 class="text-2xl md:text-2xl uppercase">Tooling</h2>
         </p-chip>
     </div>
-    <div class="w-6">
+    <div class="w-full lg:w-8 md:w-full">
         <div class="tooling-section mt-4">
             <p-card >
-                <div class="card flex justify-content-evently flex-wrap gap-3">
+                <!-- <div class="card flex justify-content-evently flex-wrap gap-3">
                     <p-chip *ngFor="let tool of toolingArr">
                         <div class="p-2 text-2xl">{{tool}}</div>
                     </p-chip>
                     
+                </div> -->
+                <div class="grid">
+                    <div class="col-4 md:col-4 lg:col-3 text-center px-0" *ngFor="let tool of toolingArr">
+                        <p-chip class="">
+                            <div class="p-2 text-lg md:text-2xl md:w-12rem w-6rem">{{ tool }}</div>
+                        </p-chip>
+                    </div>
                 </div>
-            </p-card>
+            </p-card> 
         </div>
     </div>
 </section>

@@ -1,6 +1,6 @@
 .content {
     position: relative; /* Añade posición relativa para que el pseudo-elemento se posicione correctamente */
-    height: 95vh;
+    height: 100vh;
     width: 99vw;
 }
 
@@ -25,7 +25,7 @@
 .content-tertiary{
 background-color: #17237e58;
 backdrop-filter: blur(3px);
-width: 50%;
+/* width: 50%; */
 border-radius: 12px;
 }
 .tooling-title{

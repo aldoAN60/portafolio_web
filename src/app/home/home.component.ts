@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-toolingArr:string [] = ['Angular','Laravel','TypeScript','JavaScript','PHP', 'SQLserver','MySQL', 'Figma', 'Apache', 'NGINX',]
+toolingArr:string [] = ['Angular','Laravel','TypeScript','JavaScript','PHP', 'SQLserver','MySQL', 'Figma', 'Apache', 'NGINX', 'Django', 'Phyton']
 }

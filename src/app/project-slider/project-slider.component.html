@@ -7,9 +7,14 @@
     <ng-template let-project pTemplate="item" >
         <div class="border-1 surface-border border-round m-2 text-center pt-2 pb-2 px-3 ">
             <div class="grid">
-                <div class="col-12 lg:col-6">  
+                <div class="col-12 lg:col-6 flex flex-column justify-content-center ">  
                     <div class="card flex justify-content-center">
-                        <p-image [src]="project.path_picture[0]"  width="100%" height="100%"></p-image>
+                        <ng-container *ngIf="project.path_picture[0] === undefined; else showImage">
+                            <h1 class="text-lg md:text-4xl">No image found</h1>
+                        </ng-container>
+                        <ng-template #showImage>
+                            <p-image [src]="project.path_picture[0]" width="100%" height="100%"></p-image>
+                        </ng-template>
                     </div>
                 </div>
                 <div class="col-12 lg:col-6">
